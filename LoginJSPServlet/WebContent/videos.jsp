@@ -8,10 +8,13 @@
 </head>
 <body>
 	<%
+		response.setHeader("Cache-control", "no-cache,no-store,must-revalidate");
 		if (session.getAttribute("username") == null) {
 			response.sendRedirect("login.jsp");
 		}
 	%>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/ZMP3eeX1PeA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<iframe width="560" height="315"
+		src="https://www.youtube.com/embed/ZMP3eeX1PeA" frameborder="0"
+		allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </body>
 </html>

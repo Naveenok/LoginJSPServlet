@@ -7,16 +7,19 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 	<%
+		response.setHeader("Cache-control", "no-cache,no-store,must-revalidate");
 		if (session.getAttribute("username") == null) {
 			response.sendRedirect("login.jsp");
 		}
 	%>
 	welcome ${username}
-	<a href="videos.jsp">videos here</a><br>
+	<a href="videos.jsp">videos here</a>
+	<br>
 	<form action="logout">
-	<input type="submit" value="logout">
+		<input type="submit" value="logout">
 	</form>
-	
+
 </body>
 </html>
