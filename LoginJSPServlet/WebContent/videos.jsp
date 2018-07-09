@@ -12,6 +12,6 @@
 			response.sendRedirect("login.jsp");
 		}
 	%>
-	https://www.youtube.com/watch?v=ZMP3eeX1PeA
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ZMP3eeX1PeA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </body>
 </html>
